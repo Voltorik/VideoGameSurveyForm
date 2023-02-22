@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<div id="container">
+  <header id="header">
+    <link rel="stylesheet" href="styles.css">
+    <!--User story #1-->
+    <h1 id="title" class="text-center">Video-Game Usage: Survey Form</h1>
+    <!--User story #2-->
+    <p id="description" class="text-center">Thank you for filling out the survey! This survey's purpose is to develop a more comprehensive understanding of video game usage.
+    </p>
+  </header>
+  <hr>
+  <!--User story #3-->
+  <form id="survey-form">
+    <div class="form-group">
+      <!--User story #10, #11-->
+      <label id="name-label" for="name">Name</label>
+      <!--User story #4-->
+      <input type="text" 
+             id="name" 
+             name="name"
+             class="form-control"
+             placeholder="Enter your name" required>
+    </div>
+    
+    <div class="form-group">
+    <!--User story #10, #11-->
+    <label id="email-label" for="email">Email</label>
+    <!--User story #5, #6-->
+    <input type="email" 
+           id="email" 
+           name="email" 
+           placeholder="Enter your email" 
+           class="form-control"
+           required>
+    </div>
+    
+    <div class="form-group">
+    <!--User story #10, #11-->
+    <label id="number-label" for="number">Age</label>
+    <!--User story #7, #8, #9-->
+    <input type="number" 
+           id="number" 
+           name="age" 
+           min="8" max="120" 
+           placeholder="Age" 
+           class="form-control"
+           required>
+    </div>
+    
+    <div class="form-group">
+    <label id="dropdown-label" for="dropdown">Average play time per day?</label>
+    <!--User story #12-->
+    <select id="dropdown" name="dropdown" class="form-control" required>
+      <option value="under1hr">Less than 1 hour</option>
+      <option value="1-2hr">1-2 hours</option>
+      <option value="2-3">2-3 hours</option>
+      <option value="3-4">3-4 hours</option>
+      <option value="4-5">4-5 hours</option>
+      <option value="5-6">5-6 hours</option>
+      <option value="6-7">6-7 hours</option>
+      <option value="7-8">7-8 hours</option>
+      <option value="8+">8+ hours</option>
+    </select>
+    </div>
+    
+    <div class="form-group">
+    <p>What is your current employment status?</p>
+    <!--User story #13-->
+    <label>
+      <input type="radio" 
+             id="full-time" 
+             name="employment" 
+             value="Full-time" 
+             class="input-radio"
+             checked
+             >Full-time</label>
+    <label>
+      <input type="radio" 
+             id="part-time" 
+             name="employment" 
+             value="Part-time"
+             class="input-radio"
+             >Part-time</label>
+    <label>
+      <input type="radio" 
+             id="unemployed" 
+             name="employment" 
+             value="Unemployed"
+             class="input-radio"
+             >Unemployed</label>
+    <label>
+      <input type="radio" 
+             id="student" 
+             name="employment" 
+             value="Student"
+             class="input-radio"
+             >Student</label>
+    </div>
+    
+    <div class="form-group">
+      <p>Which genres of games do you play?<span class="extra-info">(Check all that apply)</span></p>
+    <!--User story #14-->
+    <label>
+      <input name="game-genres" 
+             type="checkbox" 
+             value="shooter"
+             class="input-checkbox"
+             >Shooters</label>
+    <label>
+      <input name="game-genres" 
+             type="checkbox" 
+             value="MMO"
+             class="input-checkbox"
+             >Massively Multiplayer Online games<span class="extra-info">(MMO's)</span></label>
+    <label>
+      <input name="game-genres" 
+             type="checkbox" 
+             value="rpg"
+             class="input-checkbox"
+             >Roleplaying games <span class="extra-info">(RPG's)</span></label>
+    <label>
+      <input name="game-genres" 
+             type="checkbox" 
+             value="strategy"
+             class="input-checkbox"
+             >Strategy</label>
+    <label>
+      <input name="game-genres" 
+             type="checkbox" 
+             value="open-world"
+             class="input-checkbox"
+             >Open World</label>
+    <label>
+      <input name="game-genres" 
+             type="checkbox"
+             value="open-world"
+             class="input-checkbox"
+             >Sandbox</label>
+    <label>
+      <input name="game-genres" 
+             type="checkbox" 
+             value="action-adventure"
+             class="input-checkbox"
+             >Action/Adventure</label>
+    <label>
+      <input name="game-genres" 
+             type="checkbox" 
+             value="fighting"
+             class="input-checkbox"
+             >Fighting</label>
+    <label>
+      <input name="game-genres" 
+             type="checkbox" 
+             value="sim"
+             class="input-checkbox"
+             >Simulation</label>
+    <label>
+      <input name="game-genres" 
+             type="checkbox" 
+             value="racing"
+             class="input-checkbox"
+             >Racing</label>
+    <label>
+      <input name="game-genres" 
+             type="checkbox" 
+             value="sports"
+             class="input-checkbox"
+             >Sports</label>
+    </div>
+      
+    <div class="form-group">
+      <p>Any additional comments?</p>
+      <!--User story #15-->
+      <textarea id="comments"
+                name="comment" 
+                placeholder="Enter your comments here..."
+                class="input-textarea"
+       ></textarea>
+    </div>
+
+    <div class="form-group">
+    <!--User story #16-->
+    <button type="submit" 
+            id="submit"
+            class="submit-button"
+            >Submit</button>
+    </div>
+  </form>
+</div>
+</html>
